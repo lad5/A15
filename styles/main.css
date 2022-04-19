@@ -2,95 +2,103 @@ html {background-color: white;}
 
 /* the styles for the elements */
 body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-	width: 800px;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	border-style: solid;
-	border-color: #931420;
-	border-width: 3px;
-	background-color: #fffded;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+a:focus, a:hover {
+    font-style: italic;
 }
 body section {
-	width: 525px;
-	float: right;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
+    width: 54.6875%;
+    float: right;
+    padding: 0 2.08333% 20px 2.80333%;
 }
-
-body aside {
-	width: 215px;
-	float: right;
-	padding-left: 20px;
-	padding-bottom: 20px;
+section h1 {
+    font-size: 150%;
+    padding: .5em 0 .25em 0;
+    margin: 0;
+}
+section h2 {
+    color: #800000;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+section p {
+    padding-bottom: .5em;
+}
+section blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+section ul {
+    padding: 0 0 .25em 1.25em;
+    list-style-type: circle;
+}
+section li {
+    padding-bottom: .35em;
 }
 
 /* aside */
-aside h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
 
+aside {
+    width: 22.39583%;
+    float: right;
+    padding: 0 0 20px 2.08333%;
+}
+aside h2 {
+    color: #800000;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
 aside img {
-	padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 /* article */
 article {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border-top: 2px;
-	border-bottom: 2px;
-	border-color: #800000;
-	border-top-style: solid;
-	border-bottom-style: solid;
+    padding: .5em 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
 }
-
-article h1 {
-	font-size: 150%;
-	padding-top: .5em;
-	padding-bottom: .25em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
 article h2 {
-	padding-top: 0px;
+    padding-top: 0;
 }
-
 article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
+    font-size: 105%;
+    padding-bottom: .25em;
 }
-
 article img {
-	float: right;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 1em;
-	border: 1px solid black;
+    float: right;
+    margin: .5em 0 1em 1em;
+    max-width: 40%;
+    min-width: 150px;
+    border: 1px solid black;
 }
 
 /* the styles for the header */
-header img {
-	float: left;
-	padding-left: 30px;
-	padding-right: 30px;
+header {
+    padding: 1.5em 0 2em 0;
+    border-bottom: 3px solid #931420;
 }
 header h2 {
-	font-size: 170%;
-	color: #800000;
+    font-size: 175%;
+    color: #800000;
 }
-header {
-	border-bottom-style: solid;
-	border-color: #931420;
-	border-width: 3px;
-	padding-top: 1.5em;
-	padding-bottom: 2em;
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+header img {
+    float: left;
+    padding: 0 3.125%;
 }
 
 /* the styles for the section */
@@ -129,55 +137,118 @@ main a:hover {
 	font-style: italic;
 }
 
+/* nav menu */
 
 #nav_menu ul {
-	position: relative;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 #nav_menu ul li {
-	float: left;
+    float: left;
+    width: 20%;
 }
 #nav_menu ul li a {
-	text-decoration: none;
-	display: block;
-	width: 160px;
-	text-align: center;
-	padding: 1em 0;
-	background-color: #800000;
-	color: white;
-	font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
 }
 #nav_menu a.current {
-	color: yellow;
+    color: yellow;
 }
 #nav_menu ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
 }
-#nav_menu ul li ul li {
-	float: none;
+#nav_menu ul ul li {
+    float: none;
 }
 #nav_menu ul li:hover > ul {
-	display: block;
+    display: block;
 }
 #nav_menu > ul::after {
+    content: "";
 	clear: both;
-	content: "";
 	display: block;
 }
 
 /* the styles for the footer */
-footer p {
-	text-align: center;
-	color: #ffffff;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
 footer {
-	clear: right;
-	background-color: #931420
+    background-color: #931420;
+    clear: both;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+#mobile_menu {
+    display: none;
 }
 * {margin: 0; padding: 0;}
+
+/*Media query for width < 640 px*/
+@media only screen and (max-width: 640px) {
+    #nav_menu {
+        display: none;
+   }
+    #mobile_menu {
+        display: block;
+   }
+    .slicknav_menu {
+        background-color: #800000 !important;
+   }
+    aside h3 a {
+       font-size: 85%;
+   }
+    section h1 {
+       font-size: 125%;
+   }
+    section h2, aside h2 {
+       font-size: 110%;
+   }
+}
+/*Query for width< 530px*/
+@media only screen and (max-width: 530px) {
+    header img {
+       float: none;
+   }
+    header {
+       text-align: center;
+   }
+    body {
+       font-size: 75%;
+   }
+    section img {
+       max-width: 30%;
+   }
+    section, aside {
+        float: none;
+        width: 95.93334%;
+   }
+    aside {
+       padding: 0 2.08333% 20px 2.08333%;
+   }
+    section h1 {
+        font-size: 100%;
+   }
+    section h2, aside h2 {
+       font-size: 90%;
+   }
+    #twoColumn {
+        column-count: 2;
+   }
+}
+/*Query for width < 313px*/
+@media only screen and (max-width: 313px) {
+    html {
+       font-size: 90%;
+   }
+}
